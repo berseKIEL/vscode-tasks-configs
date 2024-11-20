@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "script1",
+			"type": "shell",
+			"command": "...",
+			"problemMatcher": [],
+			"presentation": {
+				"group": "groupA"
+			}
+		},
+		{
+			"label": "script2",
+			"type": "shell",
+			"command": "...",
+			"problemMatcher": [],
+			"presentation": {
+				"group": "groupA"
+			}
+		},
+		{
+			"taskName": "runBoth",
+			"dependsOn": [
+				"script1",
+				"script2"
+			],
+			"problemMatcher": []
+		}
+	]
+}
