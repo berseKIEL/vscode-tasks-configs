@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Front-end",
+			"type": "npm",
+			"script": "dev",
+			"path": "frontend",
+			"problemMatcher": [],
+			"presentation": {
+				"group": "groupA"
+			}
+		},
+		{
+			"label": "Run Back-end",
+			"type": "shell",
+			"command": "python manage.py runserver",
+			"options": {
+				"cwd": "${workspaceFolder}/backend"
+			},
+			"problemMatcher": [],
+			"presentation": {
+				"group": "groupA"
+			}
+		},
+		{
+			"label": "runBoth",
+			"dependsOn": [
+				"Run Front-end",
+				"Run Back-end"
+			],
+			"problemMatcher": []
+		}
+	]
+}
